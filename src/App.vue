@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+import Main from './components/Main.vue';
 </script>
 
 <template>
-  <div>
+  <!-- <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
@@ -11,11 +12,13 @@ import HelloWorld from './components/HelloWorld.vue'
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <HelloWorld msg="Vite + Vue" /> -->
+  <p>What I did following along to <a href="https://www.freecodecamp.org/news/build-a-portfolio-with-vuejs/">FreeCodeCamp VueJS tutorial</a></p>
+  <Main></Main>
 </template>
 
 <style scoped>
-.logo {
+/* .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -26,5 +29,5 @@ import HelloWorld from './components/HelloWorld.vue'
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
-}
+} */
 </style>
