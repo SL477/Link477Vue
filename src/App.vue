@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // import HelloWorld from './components/HelloWorld.vue'
-import Main from './components/Main.vue';
+// import Main from './components/Main.vue';
 </script>
 
 <template>
@@ -13,8 +13,18 @@ import Main from './components/Main.vue';
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" /> -->
-  <p>What I did following along to <a href="https://www.freecodecamp.org/news/build-a-portfolio-with-vuejs/">FreeCodeCamp VueJS tutorial</a></p>
-  <Main></Main>
+  <!-- <p>What I did following along to <a href="https://www.freecodecamp.org/news/build-a-portfolio-with-vuejs/">FreeCodeCamp VueJS tutorial</a></p>
+  <Main></Main> -->
+  <!-- Create a router link using the 'router-link' component and set the path using the 'to' attribute -->
+  <header>
+        <nav>
+            <router-link to="/">Home</router-link>
+            <router-link to="/projects">Projects</router-link>
+        </nav>
+    </header>
+
+    <!--Render the component for the corresponding router-->
+    <router-view></router-view>
 </template>
 
 <style scoped>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import { ref, computed, reactive, onMounted } from 'vue'
+    import { ref, computed, reactive, onMounted } from 'vue';
     import TestComponent from './TestComponent.vue';
     import TweetSection from './TweetSection.vue';
     import TweetMessage from './TweetMessage.vue';
