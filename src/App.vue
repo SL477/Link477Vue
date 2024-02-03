@@ -4,30 +4,37 @@
 </script>
 
 <template>
-  <!-- <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" /> -->
-  <!-- <p>What I did following along to <a href="https://www.freecodecamp.org/news/build-a-portfolio-with-vuejs/">FreeCodeCamp VueJS tutorial</a></p>
-  <Main></Main> -->
-  <!-- Create a router link using the 'router-link' component and set the path using the 'to' attribute -->
-  <header>
-        <nav>
-            <router-link to="/">Home</router-link>
-            <router-link to="/projects">Projects</router-link>
-        </nav>
+  
+  <!--Render the component for the corresponding router-->
+  <main class="page-content wrapper">
+    <header>
+      <nav>
+          <router-link to="/">Home</router-link>&nbsp;
+          <router-link to="/projects">Projects</router-link>
+      </nav>
     </header>
-
-    <!--Render the component for the corresponding router-->
     <router-view></router-view>
+  </main>
 </template>
 
 <style scoped>
+.page-content {
+  padding: 30px 0;
+  flex: 1;
+}
+
+main {
+  display: block;
+}
+
+.wrapper {
+    max-width: -webkit-calc(800px - (30px * 2));
+    max-width: calc(800px - (30px * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+}
 /* .logo {
   height: 6em;
   padding: 1.5em;
