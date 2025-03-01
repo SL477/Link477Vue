@@ -88,7 +88,7 @@
     <div class="title">{{ dataObject.title }}</div>
     <div v-html="dataObject.titleHTML"></div>
     <div v-bind:class="dataObject.dynamicClass" v-bind:id="dataObject.dynamicId">Dynamically assign a class and an ID to the div</div>
-    <button v-bind:disabled="dataObject.disabled">You can't click this button</button><br/>
+    <button v-bind:disabled="dataObject.disabled" class="btn btn-primary">You can't click this button</button><br/>
     <a v-bind:[dataObject.attribute_name]="dataObject.url">Visit my website</a><br/>
     <a v-on:[dataObject.event_name]="runFunction">Some link</a><br/>
     <div>{{ getFullName() }}</div>
@@ -103,7 +103,7 @@
 
     <div class="projects" v-for="(project) in dataObject.projects">
         <h1>{{ project.title.toUpperCase() }}</h1>
-        <input type="text" v-model="project.title" aria-label="project title"/>
+        <input type="text" v-model="project.title" aria-label="project title" class="form-control"/>
         <p>Lorem ipsum dolor sit amet.</p>
         <div>Like
             <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->

@@ -3,8 +3,6 @@ import App from './App.vue';
 import {createRouter, createWebHashHistory} from 'vue-router';
 import Main from './components/Main.vue';
 import Projects from './components/Projects.vue';
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min";
 
 // createApp(App).mount('#app')
 
