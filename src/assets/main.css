@@ -65,3 +65,9 @@ fieldset {
 .icon {
   background-color: white;
 }
+
+.screen-reader-text {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
